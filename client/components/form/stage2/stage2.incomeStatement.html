@@ -1,0 +1,240 @@
+<h4 class="text-center"> INcome statement</h4>
+ 
+
+
+
+<!-- THE MAIN VIEW -->
+<div class="container">  
+   <div class="row"> 
+      <div class="col-md-12">
+          <div class="col-md-8">
+              
+<div class="form-horizontal" >
+	  <div class="form-group">
+	            <label class="control-label col-xs-3" for="lastName">YEAR	</label>
+	            <div class="col-xs-3">
+	               <select name="" id="input" class="form-control" ng-model="year" ng-change="changeDate(year)">
+	        	<option value='2015'>2015</option>
+	        	<option value='2016'>2016</option>
+	        	<option value='2017'>2017</option>
+	        </select>
+	            </div>
+	            <div class="col-xs-3">
+                <input type="number" ng-model="year2" class="form-control">
+	            </div>
+                <div class="col-xs-3">
+                <input type="number" ng-model="year3" class="form-control">
+	            </div>
+
+	        </div>
+
+	   <div class="form-group ">
+	     <label class="control-label col-xs-3">Type of Finance</label>
+	     <div class="col-xs-3">
+	              <select name="" id="input" class="form-control" required="required">
+	              <option value=""></option>
+	        	<option value="federal tax return">federal Tax Return</option>
+	        	<option value="2016">Local tax</option>
+	        	<option value="2017">demo tax</option>
+	        </select>  
+	        </div>
+	             <div class="col-xs-3">
+	                <select name="" id="input"  class="form-control" required="required">
+                <option value="">Select type</option>
+	        	<option value="2015">2015</option>
+	        	<option value="2016">2016</option>
+	        	<option value="2017">2017</option>
+	        </select>    
+	        </div>
+	             <div class="col-xs-3">
+	              <select name="" id="input" class="form-control" required="required">
+	             <option value="">Select type</option>
+	        	<option value="2015">2015</option>
+	        	<option value="2016">2016</option>
+	        	<option value="2017">2017</option>
+	        </select>
+	        </div>
+
+	       </div>
+
+       <div class="form-group ">
+	     <label class="control-label col-xs-3">Revenue</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="revenue" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+	    <div class="form-group ">
+	     <label class="control-label col-xs-3">Profit Before Taxes</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="profitBeforeTax" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+	    <div class="form-group ">
+	     <label class="control-label col-xs-3">Add interest</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="interest" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+	    <div class="form-group ">
+	     <label class="control-label col-xs-3">add depreciation</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="depreciation" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+	    <div class="form-group ">
+	     <label class="control-label col-xs-3">add Amortization</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="amortization" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+	    <div class="form-group ">
+	     <label class="control-label col-xs-3">Add: Officer Compensation</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" ng-model="officerCompensation" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" required="required" pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+ <div class="form-group ">
+	     <label class="control-label col-xs-3">Unadjusted Net Income</label>
+	          <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="{{profitBeforeTax + interest + depreciation + amortization + officerCompensation }} "  pattern="" title="" disabled>
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" disabled pattern="" title="">
+		       </div>
+	       </div>
+	              <div class="col-xs-3">
+		       <div class="input-group">
+		           <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+		       	  <input type="number" name="revenue" id="input" class="form-control" value="" disabled pattern="" title="">
+		       </div>
+	       </div>
+	   </div>
+
+
+<!-- THE BUTTONS -->
+<div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <input type="submit" class="btn btn-primary" value="Next" >
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+        </div>
+
+        
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="jumbotron hidden-sm hidden-xs">
+          	<div class="container">
+          		<p><h5>Message</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sit facere tempore adipisci. Vitae odit, recusandae est provident harum atque impedit, et magnam labore, commodi consequuntur hic assumenda ex fugiat.
+
+          		</p>
+          	</div>
+          </div>
+
+          </div>
+</div>	
+</div>
+</div>
+

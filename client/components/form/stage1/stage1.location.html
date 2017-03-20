@@ -1,0 +1,109 @@
+
+
+<!-- THE MAIN VIEW -->
+<div class="container">  
+   <div class="row"> 
+
+   <!-- DEBUGGER -->
+<div class="row" style="position: fixed;bottom: 0px;background-color: black;z-index: 999999999">
+<h5 class="text-center" style="position: fixed;bottom: 0;background-color: black;width:100%;color:white;color-rendering: white;z-index: 9999999999"> Debugger: {{locations | json}} <br> {{formData | json}}</h5>
+</div>
+
+
+      <div class="col-md-12">
+          <div class="col-md-8">
+              
+              <!-- STARTING LOCATION   -->
+<div class="form-horizontal" data-ng-repeat="location in locations">
+<h3 class="text-center">{{location.id}}</h3>
+
+
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="lastName">Location Name	</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" ng-model="location.locationName" id="lastName" name="locationName" placeholder="Enter Location Name" required>
+            </div>
+        </div>
+           <div class="form-group">
+            <label class="control-label col-xs-3">Location Type </label>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="corporateType" ng-model="location.locationType" value="Retail"> Retail
+                </label>
+            </div>
+             <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="corporateType" ng-model="location.locationType" value="Industrial"> Industrial
+                </label>
+            </div>
+             <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="corporateType" ng-model="location.locationType" value="Office"> Office
+                </label>
+            </div>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="corporateType" ng-model="location.locationType" value="Other"> Other
+                </label>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="Address">Address </label>
+            <div class="col-xs-9">
+                <textarea rows="3" class="form-control"  ng-model="location.locationAddress" name="locationAdress" id="postalAddress" placeholder=" Enter Business Address" required></textarea>
+            </div>
+        </div>
+
+          <div class="form-group">
+            <label class="control-label col-xs-1" for="lastName">State</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" ng-model="location.locationState" id="locationState" name="locationState" placeholder="Enter State" required>
+            </div>
+            <label class="control-label col-xs-1" for="lastName">City</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" ng-model="location.locaionCity" id="lastName" name="locationCity" placeholder="Enter City" required>
+            </div>
+            <label class="control-label col-xs-1" for="lastName">Zip</label>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" ng-model="location.locationZip" id="lastName" name="locationZip" placeholder="Enter Zip " required>
+            </div>
+        </div>
+       
+
+        <div class="form-group" ng-init="getFranchise()">
+            <label class="control-label col-md-9 col-lg-9 col-xs-9" for="Postcode" >Do the current owner's own the real estate for this location </label>
+            <div class="col-md-3 col-lg-3 col-xs-3">
+                <input type="checkbox" name="isRealEstate"  ng-model="location.isRealEstate" name="isRealEstate" value="yes" ng-model="comp" required style="width:40%"> 
+            </div>
+        </div>
+   </div>
+   <button class="btn btn-success" ng-click="addNewChoice(locations,'location ')"> Add new Location </button>
+   <button class="btn btn-danger" ng-if="locations.length>1" ng-click="removeChoice(locations)">Remove Location </button>
+   <br/>
+
+</div>
+ <br>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <input type="submit" class="btn btn-primary" value="Next" >
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+        </div>
+
+          </div>
+          <div class="col-md-4">
+          <div class="jumbotron hidden-sm hidden-xs">
+          	<div class="container">
+          		<p><h5>Message</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sit facere tempore adipisci. Vitae odit, recusandae est provident harum atque impedit, et magnam labore, commodi consequuntur hic assumenda ex fugiat.
+
+          		</p>
+          	</div>
+          </div>
+
+          </div>
+</div>	
+</div>
+</div> 

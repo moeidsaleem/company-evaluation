@@ -1,0 +1,28 @@
+<section ng-if="isAuthenticated"> 
+
+<div class="jumbotron text-center">
+	<div class="container">
+		<h1>Add New Report</h1>
+		<p><span class="btn btn-warning btn-lg"  ng-style="$state.includes('stage1') ? objColor: ''" ng-click="$state.transitionTo('overview');" >Company Information </span>|
+		<span class="btn btn-warning btn-lg"  ng-style="$state.includes('stage2') ? objColor: ''" ui-sref="stage2"> Financial</span> |
+		<span class="btn btn-warning btn-lg" ui-sref="stage3"> Risk </span>|
+		<span class="btn btn-warning btn-lg" ui-sref="stage4"> Conclusion	</span>|</p>
+		<p ng-if="$state.includes('stage1')" >
+			<a class="btn btn-primary btn-lg" ng-style="$state.includes('overview') ? objColor: ''" ui-sref="overview">Overview</a>
+			<a class="btn btn-primary btn-lg"  ng-style="$state.includes('location') ? objColor: ''" ui-sref="location" >Location</a>
+			<a class="btn btn-primary btn-lg"   ng-style="$state.includes('ownership') ? objColor: ''" ui-sref="ownership">Ownership</a>
+
+		</p>
+		<p ng-if="$state.includes('stage2')" >
+			<a class="btn btn-primary btn-lg" ng-style="$state.includes('incomeStatement') ? objColor: ''" ui-sref="incomeStatement">Income Statement</a>
+			<a class="btn btn-primary btn-lg"  ng-style="$state.includes('adjustments') ? objColor: ''" ui-sref="adjustments" >Adjustments</a>
+			<a class="btn btn-primary btn-lg"   ng-style="$state.includes('weighting') ? objColor: ''" ui-sref="weighting">Weighting</a>
+			<a class="btn btn-primary btn-lg"   ng-style="$state.includes('balanceSheet') ? objColor: ''" ui-sref="balanceSheet">Balance Sheet</a>
+
+		</p>
+	</div>
+</div>
+<div ui-view></div>
+
+
+</section>

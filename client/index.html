@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>01 - Login</title>
+
+    <!-- Viewport settings-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Basic style - Bootstrap FLAT -->
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="content/css/style.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <style>
+      .navbar{
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-app="app">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="dashboard">Logo</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a ui-sref="dashboard">dashboard</a></li>
+              <li><a ui-sref="result">Result</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+            <li ng-if="isAuthenticated"  ng-class="{active: currentState.match('^dashboard')}"><a ui-sref="dashboard"> Dashboard</a></li>
+              <li ng-if="!isAuthenticated" ng-class="{active: currentState.match('^login')}"><a ui-sref="login">Log In</a></li>
+              <li ng-if="isAuthenticated" ng-class="{active: currentState.match('^login')}"><a ui-sref="dashboard" ng-click="authService.logout()">Log Out</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main ui-view></main>
+    </div>
+
+<!-- Angular Libraries -->
+     <script type="text/javascript" src="auth0-variables.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="bower_components/auth0-lock/build/lock.js"></script>
+    <script type="text/javascript" src="bower_components/angular-lock/dist/angular-lock.js"></script>
+    <script type="text/javascript" src="bower_components/angular-jwt/dist/angular-jwt.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app.run.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+
+    <!-- Component Scripts  -->
+    <script type="text/javascript" src="components/dashboard/dashboardController.js"></script>
+    <script type="text/javascript" src="components/form/formController.js"></script>
+    <script type="text/javascript" src="components/result/result.controller.js"></script>
+    <script type="text/javascript" src="components/login/login.controller.js"></script>
+    <script type="text/javascript" src="components/auth/auth.service.js"></script>
+
+
+
+    <!-- PDF Generation -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/niklasvh/html2canvas/0.5.0-alpha2/dist/html2canvas.min.js"></script>
+    <script src="bower_components/jsPDF/dist/jspdf.debug.js"></script>
+    <script src="bower_components/angular-save-html-to-pdf/dist/saveHtmlToPdf.min.js"></script>
+    <script type="text/javascript" src="bower_components/pdfmake.min.js"></script>
+
+
+
+
+
+    <!-- FIREBASE TESTING -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqCaxnIY14TNelT_wT6_H3eB8mH0dPoVE",
+    authDomain: "profilingx.firebaseapp.com",
+    databaseURL: "https://profilingx.firebaseio.com",
+    storageBucket: "profilingx.appspot.com",
+    messagingSenderId: "346154631252"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+  </body>
+</html>

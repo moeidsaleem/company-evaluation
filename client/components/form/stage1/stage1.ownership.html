@@ -1,0 +1,94 @@
+
+
+<h3 class="text-center">Ownership</h3>
+
+
+<!-- DEBUGGER -->
+<div class="row" style="position: fixed;bottom: 0px;background-color: black;z-index: 999999999">
+<h5 class="text-center" style="position: fixed;bottom: 0;background-color: black;width:100%;color:white;color-rendering: white;z-index: 9999999999"> Debugger: {{owners | json}} </h5>
+</div>
+
+
+<!-- THE MAIN VIEW -->
+<div class="container">  
+   <div class="row"> 
+      <div class="col-md-12">
+          <div class="col-md-8">
+                        <!-- STARTING OWNER 1   -->
+<div class="form-horizontal" data-ng-repeat="owner in owners">
+   <h4 class="text-center">{{owner.id}}</h4>
+
+
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="ownerName"> Owner Name</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control" ng-model="owner.ownerName" id="lastName" name="ownerName" placeholder="Owner's Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="lastName">Percent of Company Owned</label>
+            <div class="col-xs-9">
+                <input type="number" min="0"  max="100" maxlength="3" class="form-control" ng-model="owner.percentOwned" id="percentOwned" name="percentOwned" placeholder="Enter Percent Owned" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-xs-3" for="lastName">Hours Worked</label>
+            <div class="col-xs-9">
+            <div class="input-group">
+                <input type="number"  class="form-control" ng-model="owner.hoursWorked" max="168" id="hoursWorked" name="percentOwned" placeholder="Numbers of hours worker/week" required />
+                    <span class="input-group-addon">Hours</span>
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+           <label class="control-label col-xs-3">Roles/Responsibilities</label>
+            <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" name="ownerRole" ng-model="owner.ownerRole" value="General manager"> General manager
+                </label>
+            </div> <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" " name="ownerRole" ng-model="owner.ownerRole" value="book Keeper"> Book Keeper
+                </label>
+            </div> <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" " name="ownerRole" ng-model="owner.ownerRole" value="Absentee"> Absentee
+                </label>
+            </div>
+             <div class="col-xs-2">
+                <label class="radio-inline">
+                    <input type="radio" " name="ownerRole" ng-model="owner.ownerRole" value="Other"> Other
+                </label>
+            </div>
+         
+        </div>
+          
+
+    </div>
+   <button class="btn btn-success" ng-click="addNewChoice(owners,'owner ')"> Add new Owner </button>
+   <button class="btn btn-danger" ng-if="owners.length>1" ng-click="removeChoice(owners)">Remove Owner </button>
+   <br/>
+ <br>
+        <div class="form-group">
+            <div class="col-xs-offset-3 col-xs-9">
+                <input type="submit" ng-click="decide()" class="btn btn-primary" value="Next" >
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+        </div>
+
+          </div>
+          <div class="col-md-4">
+          <div class="jumbotron hidden-sm hidden-xs">
+          	<div class="container">
+          		<p><h5>Message</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sit facere tempore adipisci. Vitae odit, recusandae est provident harum atque impedit, et magnam labore, commodi consequuntur hic assumenda ex fugiat.
+
+          		</p>
+          	</div>
+          </div>
+
+          </div>
+</div>	
+</div>
+</div> 
+

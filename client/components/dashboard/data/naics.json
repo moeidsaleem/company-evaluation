@@ -1,0 +1,113 @@
+[
+
+ {
+   "NAICS_CODE": "722513",
+   "NAICS_DESC": "Limited-Service Restaurants",
+   "CORR_SIC": "5812",
+   "CORR_SIC_DESC": "Eating Places",
+   "SDE_MULTIPLE": "2.6",
+   "EBITDA_MULTIPLE": "3",
+   "SDE_PERCENTAGE": "0.18",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This U.S. industry comprises establishments primarily engaged in providing food services (except snack and nonalcoholic beverage bars) where patrons generally order or select items and pay before eating. Food and drink may be consumed on premises, taken out, or delivered to the customer's location. Some establishments in this industry may provide these food services in combination with selling alcoholic beverages."
+ },
+ {
+   "NAICS_CODE": "722511",
+   "NAICS_DESC": "Full-Service Restaurants",
+   "CORR_SIC": "5812",
+   "CORR_SIC_DESC": "Eating Places",
+   "SDE_MULTIPLE": "2.5",
+   "EBITDA_MULTIPLE": "3",
+   "SDE_PERCENTAGE": "0.18",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This U.S. industry comprises establishments primarily engaged in providing food services to patrons who order and are served while seated (i.e., waiter/waitress service) and pay after eating. These establishments may provide this type of food service to patrons in combination with selling alcoholic beverages, providing carryout services, or presenting live nontheatrical entertainment."
+ },
+ {
+   "NAICS_CODE": "624410",
+   "NAICS_DESC": "Child Day Care Services",
+   "CORR_SIC": "8351",
+   "CORR_SIC_DESC": "Child Day Care Services",
+   "SDE_MULTIPLE": "2.6",
+   "EBITDA_MULTIPLE": "3",
+   "SDE_PERCENTAGE": "0.2",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in providing day care of infants or children. These establishments generally care for preschool children, but may care for older children when they are not in school and may also offer pre-kindergarten educational programs."
+ },
+ {
+   "NAICS_CODE": "445310",
+   "NAICS_DESC": "Beer, Wine, and Liquor Stores",
+   "CORR_SIC": "5921",
+   "CORR_SIC_DESC": "Liquor Stores",
+   "SDE_MULTIPLE": "3",
+   "EBITDA_MULTIPLE": "3.5",
+   "SDE_PERCENTAGE": "0.1",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in retailing packaged alcoholic beverages, such as ale, beer, wine, and liquor."
+ },
+ {
+   "NAICS_CODE": "446110",
+   "NAICS_DESC": "Pharmacies and Drug Stores",
+   "CORR_SIC": "5912",
+   "CORR_SIC_DESC": "Drug Stores and Proprietary Stores",
+   "SDE_MULTIPLE": "2.75",
+   "EBITDA_MULTIPLE": "3.25",
+   "SDE_PERCENTAGE": "0.12",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This industry comprises establishments known as pharmacies and drug stores engaged in retailing prescription or nonprescription drugs and medicines."
+ },
+ {
+   "NAICS_CODE": "812320",
+   "NAICS_DESC": "Drycleaning and Laundry Services (except Coin-Operated)",
+   "CORR_SIC": "7216",
+   "CORR_SIC_DESC": "Drycleaning Plants, Except Rugs",
+   "SDE_MULTIPLE": "2.75",
+   "EBITDA_MULTIPLE": "3.25",
+   "SDE_PERCENTAGE": "0.33",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in one or more of the following: (1) providing drycleaning services (except coin-operated); (2) providing laundering services (except linen and uniform supply or coin-operated); (3) providing dropoff and pickup sites for laundries and/or drycleaners; and (4) providing specialty cleaning services for specific types of garments and other textile items (except carpets and upholstery), such as fur, leather, or suede garments; wedding gowns; hats; draperies; and pillows. These establishments may provide all, a combination of, or none of the cleaning services on the premises."
+ },
+ {
+   "NAICS_CODE": "311811",
+   "NAICS_DESC": "Retail Bakeries",
+   "CORR_SIC": "5461",
+   "CORR_SIC_DESC": "Retail Bakeries",
+   "SDE_MULTIPLE": "2.25",
+   "EBITDA_MULTIPLE": "2.75",
+   "SDE_PERCENTAGE": "0.25",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This U.S. industry comprises establishments primarily engaged in retailing bread and other bakery products not for immediate consumption made on the premises from flour, not from prepared dough."
+ },
+ {
+   "NAICS_CODE": "812210",
+   "NAICS_DESC": "Funeral Homes and Funeral Services",
+   "CORR_SIC": "7261",
+   "CORR_SIC_DESC": "Funeral Service and Crematories",
+   "SDE_MULTIPLE": "3",
+   "EBITDA_MULTIPLE": "3.5",
+   "SDE_PERCENTAGE": "0.4",
+   "CAN_VALUE": "FALSE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in preparing the dead for burial or interment and conducting funerals (i.e., providing facilities for wakes, arranging transportation for the dead, selling caskets and related merchandise). Funeral homes combined with crematories are included in this industry."
+ },
+ {
+   "NAICS_CODE": "424810",
+   "NAICS_DESC": "Beer and Ale Merchant Wholesalers",
+   "CORR_SIC": "5181",
+   "CORR_SIC_DESC": "Beer and Ale",
+   "SDE_MULTIPLE": "3",
+   "EBITDA_MULTIPLE": "3.5",
+   "SDE_PERCENTAGE": "0.2",
+   "CAN_VALUE": "TRUE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in the merchant wholesale distribution of beer, ale, porter, and other fermented malt beverages."
+ },
+ {
+   "NAICS_CODE": "423210",
+   "NAICS_DESC": "Furniture Merchant Wholesalers",
+   "CORR_SIC": "5021",
+   "CORR_SIC_DESC": "Furniture",
+   "SDE_MULTIPLE": "2.75",
+   "EBITDA_MULTIPLE": "3.25",
+   "SDE_PERCENTAGE": "0.2",
+   "CAN_VALUE": "FALSE",
+   "NAICS_EXT_DESC": "This industry comprises establishments primarily engaged in the merchant wholesale distribution of furniture (except hospital beds, medical furniture, and drafting tables)."
+ }
+]

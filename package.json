@@ -1,0 +1,30 @@
+{
+  "name": "user-profiling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moeidsaleem/user-profiling.git"
+  },
+  "keywords": [
+    "mongodb",
+    "express",
+    "firebase"
+  ],
+  "author": "atrixdigital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moeidsaleem/user-profiling/issues"
+  },
+  "homepage": "https://github.com/moeidsaleem/user-profiling#readme"
+}

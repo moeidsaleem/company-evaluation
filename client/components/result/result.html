@@ -1,0 +1,38 @@
+<div class="jumbotron">
+  <h2 class="text-center"><img src="content/img/logo.png" style="width:200px;height: auto;"></h2>
+  <h2 class="text-center">Result</h2>
+  <div class="text-center" ng-if="!isAuthenticated">
+    <p>You are not yet authenticated. <a ui-sref="login">Log in.</a></p>
+  </div>
+  <div class="text-center" ng-if="isAuthenticated">
+    <p>Thank you for logging in! <a href="javascript:;" ng-click="vm.authService.logout()">Log out.</a></p>
+
+<table class="table table-bordered table-hover" id="exportthis" ng-init="getCompanies()">
+<div class="row text-center"><button class="btn btn-success" ng-click="exportPdf()">Download PDF </button></div>
+    <thead>
+        <tr>
+            <th>Industry Code</th>
+            <th>Corporate Name</th>
+            <th>'DBA' Name</th>
+            <th>Corporate Type</th>
+            <th>Formation Date</th>
+            <th>Business Description</th>
+<!--             <th>is Franchise</th>
+ -->            <th>Franchise name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in companies">
+            <td>{{x.industry_code}}</td>
+            <td>{{x.corporate_name}}</td>
+            <td>{{x.company_DBA}}</td>
+            <td>{{x.corporate_type}}</td>
+            <td>{{x.formation_date}}</td>
+            <td>{{x.business_description}}</td>
+<!--             <td>{{x.isFranchise}}</td>
+ -->            <td>{{x.franchise_name}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
