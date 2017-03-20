@@ -87,13 +87,18 @@
       .state('stage3',{
         parent:'form',
         url:'stage3',
-        templateUrl:'components/form/stage3/stage3.html',
+        templateUrl:'components/form/stage3/stage3.risk.html',
+        controller:'formController'
+      })
+      .state('risk',{
+        parent:'stage3',
+        templateUrl:'components/form/stage3/stage3.risk.html',
         controller:'formController'
       })
       .state('stage4',{
         parent:'form',
         url:'stage4',
-        templateUrl:'components/form/stage4/stage4.html',
+        templateUrl:'components/form/stage4/stage4.conclusion.html',
         controller:'formController'
       });
  lockProvider.init({
